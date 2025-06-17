@@ -8,7 +8,6 @@ export async function POST(req: Request) {
         const { numero, nombre_completo, nombres, apellido_materno, apellido_paterno, tipo } = body;
         const result = await INSERT(numero, nombre_completo, nombres, apellido_materno, apellido_paterno,tipo);
 
-        console.log("==================INSERTANDO LOS SIGUIENTES REGISTROS======================");
         return result;
     } catch (error) {
         console.log("ERROR EN LA API INSERTAR POST: " + error)

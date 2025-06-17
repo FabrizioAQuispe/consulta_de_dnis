@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { getConnection,sql } from "../database/db";
-import { pool } from "mssql";
 
 export async function INSERT(
   numero: string,
